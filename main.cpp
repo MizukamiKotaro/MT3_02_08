@@ -75,6 +75,7 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR lpCmdLine, _In
 		ImGui::Text("R : Reset");
 		ImGui::DragFloat3("obb.center", &a.center.x, 0.01f);
 		ImGui::SliderFloat3("obbRotate", &rotate.x, -3.14f, 3.14f);
+		ImGui::DragFloat3("obb.size", &a.size.x, 0.01f);
 		ImGui::DragFloat3("sphere.center", &sphere.center_.x, 0.01f);
 		ImGui::DragFloat("sphere.radius", &sphere.radius_, 0.01f);
 		ImGui::End();
